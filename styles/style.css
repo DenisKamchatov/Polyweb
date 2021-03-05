@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,500&display=swap");
+body {
+  font-family: "Montserrat";
+  color: white;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: black;
+}
+
+header .header__navigation ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 22px;
+  margin-right: 30px;
+}
+
+header .header__navigation ul li:not(:last-child) {
+  margin-right: 42px;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .main__sector1 {
+  width: 100%;
+  background: url("../img/bgimage.png") 0 0/cover no-repeat;
+  text-align: center;
+}
+
+main .main__sector1 h1 {
+  margin: 220px 0 210px 0;
+  font-size: 36px;
+  font-family: "Montserrat";
+  font-style: italic;
+}
+
+main .main__sector2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .main__sector2 .main__left-container {
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
+  background: url("../img/left_image.png") 0 0/cover no-repeat;
+}
+
+main .main__sector2 .main__right-container {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+  background-color: #176a86;
+  padding: 55px 25px 35px 45px;
+}
+
+main .main__sector2 .main__right-container h1 {
+  font-size: 36px;
+  font-style: italic;
+}
+
+main .main__sector2 .main__right-container p {
+  font-size: 24px;
+  font-style: italic;
+  margin: 30px 0 40px 0;
+}
+
+main .main__sector2 .main__right-container button {
+  background: #8f1e09;
+  background: -webkit-gradient(linear, left top, right top, from(#8f1d09), color-stop(93%, #ff2800));
+  background: linear-gradient(90deg, #8f1d09 0%, #ff2800 93%);
+  color: white;
+  padding: 23px 90px 23px 90px;
+  border-radius: 10px;
+  font-size: 30px;
+  font-style: italic;
+}
+
+main .main__sector3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .main__sector3 h1 {
+  color: black;
+  font-size: 48px;
+  font-style: italic;
+  margin: 65px 0 65px 0;
+}
+
+main .main__sector3 .main__containers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding-bottom: 115px;
+}
+
+main .main__sector3 .main__containers .mini-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+  min-height: 500px;
+  padding: 0 30px 0 30px;
+  background: #176a86;
+  background: -webkit-gradient(linear, left top, right top, color-stop(42%, #176a86), to(#42a4c6));
+  background: linear-gradient(90deg, #176a86 42%, #42a4c6 100%);
+  text-align: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  border-radius: 8px;
+}
+
+main .main__sector3 .main__containers .mini-container h2 {
+  width: 100%;
+  font-size: 36px;
+}
+
+main .main__sector3 .main__containers .mini-container p {
+  font-size: 24px;
+}
+/*# sourceMappingURL=style.css.map */
