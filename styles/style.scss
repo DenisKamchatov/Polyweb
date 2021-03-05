@@ -1,0 +1,128 @@
+$blue-color: #176a86;
+$gradient-red-color-first: #ff2800;
+$gradient-red-color-second: #8f1e09;
+$gradient-blue-color-first: #42a4c6;
+$gradient-blue-color-second: #176a86;
+$footer-color: #131313;
+$body-color: #ffffff;
+$footer-text-color: #bebebe;
+$body-text-color: white;
+$header-text-color: black;
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,500&display=swap");
+
+body {
+    font-family: "Montserrat";
+    color: $body-text-color;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: $header-text-color;
+
+    .header__navigation ul {
+        display: flex;
+        font-size: 22px;
+        margin-right: 30px;
+        li:not(:last-child) {
+            margin-right: 42px;
+        }
+    }
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+
+    .main__sector1 {
+        width: 100%;
+        background: url("../img/bgimage.png") 0 0 / cover no-repeat;
+        text-align: center;
+
+        h1 {
+            margin: 220px 0 210px 0;
+            font-size: 36px;
+            font-family: "Montserrat";
+            font-style: italic;
+        }
+    }
+
+    .main__sector2 {
+        display: flex;
+
+        .main__left-container {
+            flex-basis: 60%;
+            background: url("../img/left_image.png") 0 0 / cover no-repeat;
+        }
+        .main__right-container {
+            flex-basis: 40%;
+            background-color: $blue-color;
+            padding: 55px 25px 35px 45px;
+
+            h1 {
+                font-size: 36px;
+                font-style: italic;
+            }
+            p {
+                font-size: 24px;
+                font-style: italic;
+                margin: 30px 0 40px 0;
+            }
+            button {
+                background: rgb(143, 30, 9);
+                background: linear-gradient(90deg, rgb(143, 29, 9) 0%, rgba(255, 40, 0, 1) 93%);
+                color: $body-text-color;
+                padding: 23px 90px 23px 90px;
+                border-radius: 10px;
+                font-size: 30px;
+                font-style: italic;
+            }
+        }
+    }
+
+    .main__sector3 {
+        display: flex;
+        flex-direction: column;
+
+        h1 {
+            color: black;
+            font-size: 48px;
+            font-style: italic;
+            margin: 65px 0 65px 0;
+        }
+
+        .main__containers {
+            display: flex;
+            justify-content: space-evenly;
+            padding-bottom: 115px;
+
+            .mini-container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                flex-basis: 25%;
+                min-height: 500px;
+                padding: 0 30px 0 30px;
+                background: rgb(23, 106, 134);
+                background: linear-gradient(90deg, rgba(23, 106, 134, 1) 42%, rgba(66, 164, 198, 1) 100%);
+                text-align: center;
+                justify-content: space-evenly;
+                border-radius: 8px;
+
+                img {
+                }
+                .mini-container-text {
+                }
+                h2 {
+                    width: 100%;
+                    font-size: 36px;
+                }
+                p {
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+}
